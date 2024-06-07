@@ -30,12 +30,13 @@
                     <h4>Waiting for data...</h4>
                 </div>
                 <p class="mt-3">Info: Results are fetched from a free unlimited words API. This is only to demonstrate the MQTT with WebSockets!</p>
-                <p class="Socket-status">Socket Status: Connecting ...</p>
+                <p class="Socket-status">Socket Status: Websockets is not running, Contact Developer</p>
             </div>
         </div>
     </div>
 
     <script type="text/javascript">
+        console.log("Connecting to WebSocket server...")
         const websocket = new WebSocket("ws://localhost:6789");
 
         websocket.onopen = function() {
